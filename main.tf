@@ -7,11 +7,15 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.5"
+    }
   }
+}
 
   # optional but recommended:
   # required_version = ">= 1.3.0"
-}
 
 provider "aws" {
   region = "us-east-2"
